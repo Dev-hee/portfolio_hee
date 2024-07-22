@@ -10,14 +10,17 @@ nav a:hover {border-bottom:2px solid #fff;}
 main {}
 main .visual {
     height:100vh;
-    background:url(../images/bg.jpg) center;
+    background:url(../images/bg.png) center;
     background-size:cover;
     position:relative;
 }
 main .visual p {position:absolute; left:20px; top:20px;}
-main .visual h1 {text-align:center; padding-top:16%;}
+main .visual h1 {/*text-align:center; padding-top:16%;*/ 
+    text-align: left; margin:260px 0; font-size:7rem; font-weight:800; line-height:1.2; font-family:'GmarketSans';}
+main .visual h2 {text-align:right; font-weight:800;}
+main .visual h2 span{font-family:'Cafe24ClassicType-Regular';}
 main .visual .txt_bg {
-    position:absolute; bottom:30px; left:0;
+    position:absolute; bottom:30px; left:20px;
     background:url(../images/text_bg.png) repeat-x; 
     background-size:auto 30px;
     width:100%; height:30px;
@@ -30,9 +33,9 @@ main .visual .txt_bg {
 /* 공통 */
 main a:hover {filter:brightness(150%)}
 main > div {padding:30px; min-width:1520px; }
-h2 {font-family: 'Cafe24ClassicType-Regular'; font-size:30px;}
-h3 {font-family: 'PuradakGentleGothicR'; font-size:60px;}
-h4 {font-family: 'PuradakGentleGothicR'; font-size:40px;}
+h2 {font-family: 'GmarketSans'; font-size:30px;}
+h3 {font-family: 'GmarketSans'; font-size:60px; font-weight: 800;}
+h4 {font-family: 'Pretendard-Regular'; font-size:40px; font-weight: 800;}
 main .contents {text-align: center;}
 main .container {display:flex; justify-content: center; align-items: center;}
 main .container .thum {width:800px; margin-right:100px;}
@@ -73,12 +76,17 @@ main .container .info .link a {background:#1D7EFF; color:#fff; padding:5px 10px;
 #project .project0 {
     background:url(../images/project_0_bg.png)no-repeat center 150%;
 }
-/* 제인코트 에스뿌아 */
+
+/* 제인코트 에스쁘아 */
 #project .project1 .swiper {width:100%;}
 #project .project1 .swiper-slide {background:url(../images/project1.jpg); padding:100px 0;}
 #project .project1 .swiper-slide * {color:#000;}
 #project .project1 .swiper-slide .logo {text-align: right;}
 #project .project1 .swiper-slide .link a {background:#000; color:#fff;}
+
+#project .project1 .swiper-slide .info h1{font-weight:700; letter-spacing:-2px;}
+#project .project1 .swiper-slide .info p:nth-child(1){font-weight: 700; color:yellow;}
+
 /* project2 ~ 4 */
 #project .project2 {background:#fff; padding:100px 0;}
 #project .project2 img {width:100%;}
