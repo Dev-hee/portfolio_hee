@@ -1,6 +1,6 @@
 const project1 = new Swiper('.project1 .swiper',{
-    autoplay:{delay:2000,},
-    loop:true,
+    slidesPerView:1,
+    autoplay:{delay:3000,},
 })
 const project2 = new Swiper('.project2 .swiper',{
     slidesPerView:4,

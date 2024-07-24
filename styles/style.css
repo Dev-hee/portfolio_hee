@@ -1,8 +1,20 @@
 html,body {scroll-behavior: smooth;}
 /* nav */
 nav {
-    position:fixed; right:20px; top:20px;
+    /*opacity: .9;*/
+    padding:10px;
+    position:fixed;
     z-index:999;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color:#000000;
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
 }
 nav a {color:#fff; margin-left:30px; padding-bottom:5px;}
 nav a:hover {border-bottom:2px solid #fff;}
@@ -10,11 +22,19 @@ nav a:hover {border-bottom:2px solid #fff;}
 main {}
 main .visual {
     height:100vh;
-    background:url(../images/bg.png) center;
     background-size:cover;
     position:relative;
+    background: linear-gradient(
+                to left,
+                rgba(20, 20, 20, 0) 10%,
+                rgba(20, 20, 20, 0.25) 45%,
+                rgba(20, 20, 20, 0.5) 75%,
+                rgba(20, 20, 20, 0.75) 85%,
+                rgba(20, 20, 20, 1) 100%),
+    url(../images/bg.png);
+    background-size: cover;
 }
-main .visual p {position:absolute; left:20px; top:20px;}
+main .visual p {position:absolute; left:20px; top:70px;}
 main .visual h1 {/*text-align:center; padding-top:16%;*/ 
     text-align: left; margin:260px 0; font-size:7rem; font-weight:800; line-height:1.2; font-family:'GmarketSans';}
 main .visual h2 {text-align:right; font-weight:800;}
@@ -50,7 +70,16 @@ main .container .info .link a {background:#1D7EFF; color:#fff; padding:5px 10px;
 /*  */
 #profile {background:#000;}
 #contents {
-    background:url(../images/list_bg.jpg) center;
+    background: linear-gradient(
+        to right,
+        rgba(20, 20, 20, 0) 10%,
+        rgba(20, 20, 20, 0.25) 45%,
+        rgba(20, 20, 20, 0.5) 75%,
+        rgba(20, 20, 20, 0.75) 85%,
+        rgba(20, 20, 20, 1) 100%),
+    url(../images/list_bg.jpg) center;
+
+
     background-size:cover;
 }
 #contents ul {padding:50px 0;}
@@ -61,6 +90,7 @@ main .container .info .link a {background:#1D7EFF; color:#fff; padding:5px 10px;
 }
 #contents ul li .list {display:flex; justify-content: flex-end;}
 #contents ul li .list p {margin-left:50px;}
+
 /* project */
 #project {background:#000;}
 #project .title {
@@ -78,22 +108,23 @@ main .container .info .link a {background:#1D7EFF; color:#fff; padding:5px 10px;
 }
 
 /* 제인코트 에스쁘아 */
-#project .project1 .swiper {width:100%;}
-#project .project1 .swiper-slide {background:url(../images/project1.jpg); padding:100px 0;}
+#project .project1 .swiper {width:100%; height:90vh;}
+#project .project1 .swiper-slide:nth-child(1) {background:url(../images/project1.jpg); padding:100px 0;}
+#project .project1 .swiper-slide:nth-child(2) {background:url(../project/web/es/mockup.png); background-repeat: no-repeat; background-color: #ffffff; padding:100px 0;}
 #project .project1 .swiper-slide * {color:#000;}
 #project .project1 .swiper-slide .logo {text-align: right;}
 #project .project1 .swiper-slide .link a {background:#000; color:#fff;}
 
-#project .project1 .swiper-slide .info h1{font-weight:700; letter-spacing:-2px;}
+#project .project1 .swiper-slide .info h1{font-weight:600; font-family: 'Pretendard-Regular'; letter-spacing:-2px;}
 #project .project1 .swiper-slide .info p:nth-child(1){font-weight: 700; color:yellow;}
 
 /* project2 ~ 4 */
-#project .project2 {background:#fff; padding:100px 0;}
+#project .project2 {}
 #project .project2 img {width:100%;}
 #project .project3 img {width:100%;}
 #project .project4 img {width:100%;}
-#project .project4 .swiper-slide {height:600px; overflow:hidden;}
-#project .project3 .swiper-slide {height:490px; overflow:hidden;}
+#project .project4 .swiper-slide { height:600px; overflow:hidden;}
+#project .project3 .swiper-slide {height:530px; overflow:hidden;}
 /* footer */
 footer {
     background:url(../images/bg.jpg) center;
@@ -102,7 +133,7 @@ footer {
     display:flex;
     justify-content: center;
     align-items: center;
-    height:70vh;
+    height:80vh;
 }
 footer p:first-child {margin-right:100px;}
 footer p {text-align:center; color:#fff; font-size:40px; font-weight:700; line-height:1.8;}
