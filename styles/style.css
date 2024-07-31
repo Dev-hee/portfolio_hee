@@ -131,11 +131,13 @@ main .container .info .link a {background:#1D7EFF; color:#fff; padding:5px 10px;
 #project .project1 .swiper-slide:nth-child(1) {background:url(../images/project1.jpg); padding:100px 0;}
 #project .project1 .swiper-slide:nth-child(2) {background:url(../project/web/es/mockup.png); background-repeat: no-repeat; background-color: #ffffff; padding:100px 0;}
 #project .project1 .swiper-slide * {color:#000;}
+
 #project .project1 .swiper-slide .logo {text-align: right;}
 #project .project1 .swiper-slide .link a {background:#000; color:#fff;}
 
 #project .project1 .swiper-slide .info h1{font-weight:600; font-family: 'Pretendard-Regular'; letter-spacing:-2px;}
 #project .project1 .swiper-slide .info p:nth-child(1){font-weight: 700; color:yellow;}
+
 
 /* project2 ~ 4 */
 #project .project2 {}
