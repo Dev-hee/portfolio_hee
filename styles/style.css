@@ -144,12 +144,23 @@ main .container .info .link a {background:#1D7EFF; color:#fff; padding:5px 10px;
 #project .project4 img {width:100%;}
 #project .project4 .swiper-slide {height:720px; overflow:hidden;}
 #project .project3 .swiper-slide {height:530px; overflow:hidden;}
+#project .project4 .swiper-slide::before{
+    content: '';
+    display: block;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(360deg, #000000, transparent);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+}
 /* footer */
 footer {
     background:url(../images/bg.jpg) center;
     background-size:cover;
     min-width:1520px;
-    display:flex;
+    display:flex;rgb(0, 0, 0)
     justify-content: center;
     align-items: center;
     height:80vh;
