@@ -60,13 +60,20 @@ main .contents {text-align: center;}
 main .container {display:flex; justify-content: center; align-items: center;}
 main .container .thum {width:800px; margin-right:100px;}
 main .container .thum img {width:100%;}
-main .container .info {width:500px;}
+main .container .info {text-align: end; width: 500px;}
 main .container .info p:first-child {padding-bottom:30px;}
 main .container .info h1 {font-size:60px; font-family: 'Pretendard-Regular'; font-weight:600;}
 main .container .info h1+p {padding:20px 0 50px;}
+main .container .info h4 {}
+main .container .info h4 p{font-size: 1rem;}
 main .container .info p:nth-child(4) {line-height:1.7;}
-main .container .info .link {display:flex; margin-top:50px;}
-main .container .info .link a {background:#1D7EFF; color:#fff; padding:5px 10px; margin-right:10px;}
+main .container .info .link {
+    display: flex;
+    margin-top: 50px;
+    gap: 10px;
+    justify-content: flex-end;
+}
+main .container .info .link a {background:#1D7EFF; color:#fff; padding:5px 10px;}
 /*  */
 #profile {background:#000;}
 #contents {
